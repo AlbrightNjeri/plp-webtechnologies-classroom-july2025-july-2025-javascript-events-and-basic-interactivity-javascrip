@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JS Event Handling & Interactivity</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Interactive JavaScript Demo</h1>
+  </header>
+
+  <!-- Light/Dark Mode Toggle -->
+  <section>
+    <h2>🎨 Theme Toggle</h2>
+    <button id="themeToggle">Switch to Dark Mode</button>
+  </section>
+
+  <!-- Counter -->
+  <section>
+    <h2>🔢 Counter</h2>
+    <button id="decrement">-</button>
+    <span id="count">0</span>
+    <button id="increment">+</button>
+  </section>
+
+  <!-- Collapsible FAQ -->
+  <section>
+    <h2>❓ FAQ</h2>
+    <div class="faq">
+      <button class="faq-question">What is JavaScript?</button>
+      <p class="faq-answer">JavaScript is a programming language that makes web pages interactive.</p>
+    </div>
+    <div class="faq">
+      <button class="faq-question">Why use event listeners?</button>
+      <p class="faq-answer">They let you respond to user actions like clicks and typing.</p>
+    </div>
+  </section>
+
+  <!-- Form -->
+  <section>
+    <h2>📋 Sign Up Form</h2>
+    <form id="signupForm" novalidate>
+      <label>
+        Name:
+        <input type="text" id="name" required />
+        <small class="error"></small>
+      </label>
+      <label>
+        Email:
+        <input type="email" id="email" required />
+        <small class="error"></small>
+      </label>
+      <label>
+        Password:
+        <input type="password" id="password" required />
+        <small class="error"></small>
+      </label>
+      <button type="submit">Sign Up</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
